@@ -1,0 +1,415 @@
+<div class="bf26 bf26-cont">
+<style>
+.bf26-cont{font-family:Roboto,Arial,sans-serif;color:#333333;font-size:16px;line-height:1.6;text-align:left;max-width:1200px;margin:0 auto 32px;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.bf26-cont *,.bf26-cont *::before,.bf26-cont *::after{box-sizing:border-box}
+.bf26-cont h2,.bf26-cont h3,.bf26-cont p,.bf26-cont ul,.bf26-cont ol,.bf26-cont li{margin:0;padding:0;border:0;background:none;float:none;list-style:none;text-transform:none}
+.bf26-cont img{display:block;max-width:100%;height:auto;border:0;margin:0;float:none;position:static}
+.bf26-cont svg{display:block;flex:none}
+.bf26-cont a{text-decoration:none}
+.bf26-cont .bf26-sec{margin:0;padding:52px 0}
+.bf26-cont .bf26-sec-claro{background:#F3F7FB;border:1px solid #E3EAF2;border-radius:16px}
+.bf26-cont .bf26-sec-claro,.bf26-cont .bf26-sec-navy,.bf26-cont .bf26-final{margin-top:16px}
+.bf26-cont .bf26-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.bf26-cont .bf26-eb{margin:0 0 8px;color:#0174C4;font-size:13px;line-height:1.4;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.bf26-cont .bf26-sec-claro .bf26-eb{color:#0A5FA0}
+.bf26-cont .bf26-h2{margin:0 0 10px;padding:0;color:#0B2E4F;font-family:Roboto,Arial,sans-serif;font-size:32px;line-height:1.2;font-weight:700;letter-spacing:0;text-transform:none;text-align:left;border:0;background:none}
+.bf26-cont .bf26-intro{margin:0 0 28px;max-width:780px;color:#444444;font-size:17px;line-height:1.6}
+.bf26-cont .bf26-lk,.bf26-cont .bf26-lk:visited{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:10px 0;color:#0174C4;font-size:15px;line-height:1.3;font-weight:700;text-decoration:none}
+.bf26-cont .bf26-lk:hover,.bf26-cont .bf26-lk:focus{color:#0B2E4F;text-decoration:underline}
+.bf26-cont .bf26-tl,.bf26-cont .bf26-tl:visited{color:#0174C4;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.bf26-cont .bf26-tl:hover,.bf26-cont .bf26-tl:focus{color:#0B2E4F}
+.bf26-cont a:focus-visible{outline:3px solid #00A0E3;outline-offset:3px}
+.bf26-cont .bf26-bt{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border:2px solid transparent;border-radius:10px;font-family:Roboto,Arial,sans-serif;font-size:17px;line-height:1.25;font-weight:700;text-align:center;text-decoration:none;transition:transform .2s,background-color .2s}
+.bf26-cont .bf26-bt svg{width:22px;height:22px}
+.bf26-cont .bf26-bt:hover,.bf26-cont .bf26-bt:focus{transform:translateY(-2px);text-decoration:none}
+.bf26-cont .bf26-bt-am,.bf26-cont .bf26-bt-am:visited{background-color:#FFD500;border-color:#FFD500;color:#0B0F14}
+.bf26-cont .bf26-bt-am:hover,.bf26-cont .bf26-bt-am:focus{background-color:#FFE24D;border-color:#FFE24D;color:#0B0F14}
+.bf26-cont .bf26-bt-vd,.bf26-cont .bf26-bt-vd:visited{background-color:#0B6B31;border-color:#0B6B31;color:#FFFFFF}
+.bf26-cont .bf26-bt-vd:hover,.bf26-cont .bf26-bt-vd:focus{background-color:#09582A;border-color:#09582A;color:#FFFFFF}
+.bf26-cont .bf26-bt-ct,.bf26-cont .bf26-bt-ct:visited{background-color:rgba(255,255,255,.04);border-color:rgba(255,255,255,.75);color:#FFFFFF}
+.bf26-cont .bf26-bt-ct:hover,.bf26-cont .bf26-bt-ct:focus{background-color:#0B6B31;border-color:#0B6B31;color:#FFFFFF}
+.bf26-cont .bf26-cmyk{display:block;height:6px;background:linear-gradient(90deg,#00A0E3 0,#00A0E3 25%,#E5007E 25%,#E5007E 50%,#FFD500 50%,#FFD500 75%,#3A3F45 75%,#3A3F45 100%)}
+/* categorias */
+.bf26-cont .bf26-banner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;margin:0 0 20px;padding:24px 28px;border-left:6px solid #FFD500;border-radius:14px;background-color:#0B0F14;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.6px),linear-gradient(120deg,#0B0F14 0%,#0E1824 60%,#0B2E4F 100%);background-size:16px 16px,auto}
+.bf26-cont .bf26-banner-t{flex:1 1 420px;min-width:0}
+.bf26-cont .bf26-tag{display:block;margin:0 0 6px;color:#FFD500;font-size:13px;line-height:1.4;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.bf26-cont .bf26-banner h3{margin:0 0 4px;color:#FFFFFF;font-size:24px;line-height:1.25;font-weight:700}
+.bf26-cont .bf26-banner p{margin:0;color:#C9D3DF;font-size:16px;line-height:1.5}
+.bf26-cont .bf26-cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.bf26-cont .bf26-cat,.bf26-cont .bf26-cat:visited{display:flex;flex-direction:column;padding:16px 18px 18px;border:1px solid #D9E3EE;border-radius:14px;background:#FFFFFF;color:#444444;text-decoration:none;transition:transform .15s,box-shadow .15s,border-color .15s}
+.bf26-cont .bf26-cat:hover,.bf26-cont .bf26-cat:focus{transform:translateY(-3px);box-shadow:0 14px 28px rgba(11,46,79,.12);border-color:#0174C4;color:#444444;text-decoration:none}
+.bf26-cont .bf26-cat-img{display:flex;align-items:center;justify-content:center;height:150px;margin:0 0 12px;padding:0 0 12px;border-bottom:1px solid #EEF2F7;background:#FFFFFF}
+.bf26-cont .bf26-cat-img img{width:auto;height:auto;max-width:100%;max-height:138px;object-fit:contain}
+.bf26-cont .bf26-cat h3{margin:0 0 6px;color:#0B2E4F;font-size:20px;line-height:1.25;font-weight:700}
+.bf26-cont .bf26-cat p{margin:0 0 12px;color:#444444;font-size:15px;line-height:1.5}
+.bf26-cont .bf26-cat-cta{margin-top:auto;color:#0174C4;font-size:15px;line-height:1.3;font-weight:700}
+.bf26-cont .bf26-mais{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:20px 0 0}
+.bf26-cont .bf26-mais-t{margin-right:4px;color:#0B2E4F;font-size:15px;font-weight:700}
+.bf26-cont .bf26-pill,.bf26-cont .bf26-pill:visited{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border:1px solid #C9D9EA;border-radius:999px;background:#FFFFFF;color:#0B2E4F;font-size:15px;line-height:1.3;font-weight:700;text-decoration:none}
+.bf26-cont .bf26-pill:hover,.bf26-cont .bf26-pill:focus{border-color:#0174C4;color:#0174C4;text-decoration:none}
+/* como achar */
+.bf26-cont .bf26-passos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.bf26-cont .bf26-passos li{position:relative;margin:0;padding:20px 20px 20px 72px;border:1px solid #D9E3EE;border-radius:12px;background:#FFFFFF}
+.bf26-cont .bf26-num{position:absolute;left:20px;top:20px;width:38px;height:38px;border-radius:50%;background:#0B2E4F;color:#FFFFFF;font-size:18px;line-height:38px;font-weight:700;text-align:center}
+.bf26-cont .bf26-passos h3{margin:0 0 6px;color:#0B2E4F;font-size:19px;line-height:1.3;font-weight:700}
+.bf26-cont .bf26-passos p{margin:0;color:#444444;font-size:16px;line-height:1.55}
+.bf26-cont .bf26-passos .bf26-lk{padding-bottom:0}
+.bf26-cont .bf26-cod{display:inline-block;margin:8px 6px 0 0;padding:3px 10px;border-radius:6px;background:#0B0F14;color:#FFD500;font-family:Consolas,'Courier New',monospace;font-size:15px;line-height:1.5;font-weight:700;letter-spacing:.5px}
+.bf26-cont .bf26-duo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px;margin:16px 0 0}
+.bf26-cont .bf26-check,.bf26-cont .bf26-box{padding:20px 22px;border:1px solid #D9E3EE;border-radius:12px;background:#FFFFFF}
+.bf26-cont .bf26-check{border-left:5px solid #0B6B31}
+.bf26-cont .bf26-check h3,.bf26-cont .bf26-box h3{margin:0 0 8px;color:#0B2E4F;font-size:19px;line-height:1.3;font-weight:700}
+.bf26-cont .bf26-checks{margin:0 0 16px}
+.bf26-cont .bf26-checks li{position:relative;margin:0 0 8px;padding:0 0 0 30px;color:#444444;font-size:16px;line-height:1.5}
+.bf26-cont .bf26-checks li::before{content:"";position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:50%;background:#0B6B31}
+.bf26-cont .bf26-checks li::after{content:"";position:absolute;left:7px;top:6px;width:6px;height:10px;border:solid #FFFFFF;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.bf26-cont .bf26-box{display:flex;align-items:flex-start;gap:16px;border-left:5px solid #0174C4}
+.bf26-cont .bf26-box p{margin:0 0 4px;color:#444444;font-size:16px;line-height:1.6}
+.bf26-cont .bf26-ico{display:flex;align-items:center;justify-content:center;flex:0 0 50px;width:50px;height:50px;margin:0 0 14px;border-radius:12px;background:#EAF3FB;color:#0174C4}
+.bf26-cont .bf26-ico svg{width:28px;height:28px}
+.bf26-cont .bf26-box .bf26-ico{margin:0}
+/* vantagens */
+.bf26-cont .bf26-vants{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.bf26-cont .bf26-vant{display:flex;flex-direction:column;padding:22px 22px 10px;border:1px solid #D9E3EE;border-radius:14px;background:#FFFFFF}
+.bf26-cont .bf26-vant h3{margin:0 0 6px;color:#0B2E4F;font-size:19px;line-height:1.3;font-weight:700}
+.bf26-cont .bf26-vant p{margin:0 0 6px;color:#444444;font-size:15.5px;line-height:1.6}
+.bf26-cont .bf26-vant-l{display:flex;flex-wrap:wrap;column-gap:18px;margin-top:auto}
+/* reputacao */
+.bf26-cont .bf26-sec-navy{border-radius:16px;background-color:#0B2E4F;background-image:radial-gradient(circle at 92% 8%,rgba(0,160,227,.28),rgba(0,160,227,0) 40%),linear-gradient(160deg,#0B2E4F 0%,#0A2440 100%)}
+.bf26-cont .bf26-sec-navy .bf26-eb{color:#FFD500}
+.bf26-cont .bf26-sec-navy .bf26-h2{color:#FFFFFF}
+.bf26-cont .bf26-sec-navy .bf26-intro{color:#D6E2EE}
+.bf26-cont .bf26-notas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.bf26-cont .bf26-nota{display:flex;flex-direction:column;padding:22px 20px;border:1px solid #2B5379;border-radius:14px;background:#123A60;color:#D6E2EE}
+.bf26-cont .bf26-nota-s{display:block;margin:0 0 6px;color:#FFD500;font-size:13px;line-height:1.35;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.bf26-cont .bf26-nota-n{display:block;margin:0 0 6px;color:#FFFFFF;font-size:40px;line-height:1.05;font-weight:700}
+.bf26-cont .bf26-nota-n small{color:#BFD3E6;font-size:20px;font-weight:700}
+.bf26-cont .bf26-nota p{margin:0;color:#D6E2EE;font-size:15.5px;line-height:1.5}
+.bf26-cont .bf26-nota p strong{color:#FFFFFF}
+.bf26-cont .bf26-trofeu{display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:0 0 10px;border-radius:50%;background:#FFD500;color:#0B0F14}
+.bf26-cont .bf26-trofeu svg{width:30px;height:30px}
+.bf26-cont .bf26-fonte{margin:16px 0 0;color:#BFD3E6;font-size:14px;line-height:1.5}
+.bf26-cont .bf26-empresa{margin:22px 0 0;padding:18px 0 0;border-top:1px solid #2B5379;color:#D6E2EE;font-size:16px;line-height:1.6}
+.bf26-cont .bf26-empresa strong{color:#FFFFFF}
+.bf26-cont .bf26-pills2{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.bf26-cont .bf26-pill2,.bf26-cont .bf26-pill2:visited{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:1px solid rgba(255,255,255,.45);border-radius:999px;color:#FFFFFF;font-size:15px;line-height:1.3;font-weight:700;text-decoration:none}
+.bf26-cont .bf26-pill2:hover,.bf26-cont .bf26-pill2:focus{background-color:#FFFFFF;color:#0B2E4F;text-decoration:none}
+/* faq */
+.bf26-cont .bf26-faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.bf26-cont .bf26-q{padding:18px 20px;border:1px solid #D9E3EE;border-left:5px solid #0174C4;border-radius:12px;background:#FFFFFF}
+.bf26-cont .bf26-q h3{margin:0 0 6px;color:#0B2E4F;font-size:18px;line-height:1.35;font-weight:700}
+.bf26-cont .bf26-q p{margin:0;color:#444444;font-size:15.5px;line-height:1.6}
+/* faixa final */
+.bf26-cont .bf26-final{overflow:hidden;padding:0 0 40px;border-radius:16px;background-color:#0B0F14;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.6px),linear-gradient(140deg,#0B0F14 0%,#0E1824 60%,#0B2E4F 100%);background-size:16px 16px,auto;color:#FFFFFF}
+.bf26-cont .bf26-final .bf26-cmyk{margin:0 0 36px}
+.bf26-cont .bf26-final-in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:center}
+.bf26-cont .bf26-final .bf26-eb{color:#FFD500}
+.bf26-cont .bf26-final .bf26-h2{margin-bottom:8px;color:#FFFFFF}
+.bf26-cont .bf26-final-p{margin:0;color:#C9D3DF;font-size:17px;line-height:1.55}
+.bf26-cont .bf26-final-acoes{display:flex;flex-wrap:wrap;gap:12px}
+.bf26-cont .bf26-contato{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;column-gap:22px;margin:4px 0 0;padding:10px 0 0;border-top:1px solid #2A3644;color:#C9D3DF;font-size:15px;line-height:1.4}
+.bf26-cont .bf26-ci{display:inline-flex;align-items:center;gap:6px;min-height:44px}
+.bf26-cont .bf26-contato a,.bf26-cont .bf26-contato a:visited{display:inline-flex;align-items:center;min-height:44px;color:#FFFFFF;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.bf26-cont .bf26-contato a:hover,.bf26-cont .bf26-contato a:focus{color:#FFD500}
+@media (max-width:1100px){
+.bf26-cont .bf26-cats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bf26-cont .bf26-notas{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bf26-cont .bf26-vants{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:899px){
+.bf26-cont .bf26-sec{padding:44px 0}
+.bf26-cont .bf26-h2{font-size:27px}
+.bf26-cont .bf26-passos{grid-template-columns:minmax(0,1fr);gap:12px}
+.bf26-cont .bf26-duo{grid-template-columns:minmax(0,1fr);gap:12px}
+.bf26-cont .bf26-faq{grid-template-columns:minmax(0,1fr)}
+.bf26-cont .bf26-final-in{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:599px){
+.bf26-cont .bf26-sec{padding:36px 0}
+.bf26-cont .bf26-wrap{padding:0 16px}
+.bf26-cont .bf26-h2{font-size:24px}
+.bf26-cont .bf26-intro{margin-bottom:22px;font-size:16px}
+.bf26-cont .bf26-banner{padding:20px 18px;gap:14px}
+.bf26-cont .bf26-banner h3{font-size:21px}
+.bf26-cont .bf26-banner .bf26-bt{width:100%}
+.bf26-cont .bf26-cats{grid-template-columns:minmax(0,1fr);gap:10px}
+.bf26-cont .bf26-cat,.bf26-cont .bf26-cat:visited{display:grid;grid-template-columns:84px minmax(0,1fr);column-gap:14px;align-items:start;padding:12px 14px 12px 12px}
+.bf26-cont .bf26-cat-img{grid-row:1 / span 3;height:84px;margin:0;padding:0;border:0}
+.bf26-cont .bf26-cat-img img{max-height:84px}
+.bf26-cont .bf26-cat h3{margin-bottom:2px;font-size:17px}
+.bf26-cont .bf26-cat p{margin-bottom:6px;font-size:14px;line-height:1.45}
+.bf26-cont .bf26-cat-cta{font-size:14px}
+.bf26-cont .bf26-mais-t{width:100%}
+.bf26-cont .bf26-sec-claro,.bf26-cont .bf26-sec-navy,.bf26-cont .bf26-final{margin-top:12px;border-radius:14px}
+.bf26-cont .bf26-passos li{padding:16px 16px 16px 64px}
+.bf26-cont .bf26-num{left:14px;top:16px;width:36px;height:36px;font-size:17px;line-height:36px}
+.bf26-cont .bf26-passos h3{font-size:18px}
+.bf26-cont .bf26-check,.bf26-cont .bf26-box{padding:16px}
+.bf26-cont .bf26-check .bf26-bt{width:100%}
+.bf26-cont .bf26-box{gap:12px}
+.bf26-cont .bf26-box .bf26-ico{flex-basis:42px;width:42px;height:42px}
+.bf26-cont .bf26-vants{grid-template-columns:minmax(0,1fr);gap:12px}
+.bf26-cont .bf26-vant{padding:18px 18px 8px}
+.bf26-cont .bf26-notas{grid-template-columns:minmax(0,1fr);gap:10px}
+.bf26-cont .bf26-nota{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"n s" "n p";column-gap:16px;align-items:center;padding:14px 16px}
+.bf26-cont .bf26-nota-s{grid-area:s;align-self:end;margin:0 0 2px}
+.bf26-cont .bf26-nota-n{grid-area:n;min-width:88px;margin:0;font-size:32px}
+.bf26-cont .bf26-nota-n small{font-size:17px}
+.bf26-cont .bf26-nota p{grid-area:p;align-self:start;font-size:15px}
+.bf26-cont .bf26-premio .bf26-trofeu{grid-area:n;margin:0 18px 0 0}
+.bf26-cont .bf26-premio p{grid-column:2;grid-row:1 / span 2;align-self:center}
+.bf26-cont .bf26-final{padding-bottom:32px}
+.bf26-cont .bf26-final .bf26-cmyk{margin-bottom:28px}
+.bf26-cont .bf26-final-acoes{flex-direction:column}
+.bf26-cont .bf26-final-acoes .bf26-bt{width:100%}
+.bf26-cont .bf26-contato{display:block}
+.bf26-cont .bf26-ci{display:flex}
+}
+@media (max-width:379px){
+.bf26-cont .bf26-wrap{padding:0 12px}
+.bf26-cont .bf26-h2{font-size:23px}
+.bf26-cont .bf26-bt{padding:12px 10px;font-size:16px}
+}
+</style>
+
+<section class="bf26-sec">
+<div class="bf26-wrap">
+<p class="bf26-eb">Categorias</p>
+<h2 class="bf26-h2">Ofertas de Black Friday e categorias da loja</h2>
+<p class="bf26-intro">A vitrine acima mostra alguns destaques. Todos os toners compatíveis, cartuchos e tintas para impressora em promoção ficam reunidos na categoria Black Friday. Se preferir, navegue pelo tipo de produto.</p>
+<div class="bf26-banner">
+<div class="bf26-banner-t">
+<span class="bf26-tag">Categoria Black Friday</span>
+<h3>Todas as ofertas em um só lugar</h3>
+<p>Ofertas válidas de 1&ordm; a 30/11/2026, enquanto durarem os estoques.</p>
+</div>
+<a class="bf26-bt bf26-bt-am" href="https://www.printloja.com.br/black-friday" title="Abrir a categoria Black Friday da Print Loja">Ver a categoria Black Friday</a>
+</div>
+<div class="bf26-cats">
+<a class="bf26-cat" href="https://www.printloja.com.br/toner" title="Ver toners para impressora laser">
+<span class="bf26-cat-img"><img src="https://images.tcdn.com.br/img/img_prod/1041864/compativel_toner_premium_tn1060_356131_1_dd0cd1b655fa2a49c503c79cac566a6a.jpg" alt="Toner compatível com Brother TN1060" width="643" height="642" loading="lazy"></span>
+<h3>Toner</h3>
+<p>Compatíveis e originais para impressoras laser, como HP e Brother.</p>
+<span class="bf26-cat-cta">Ver toners &rarr;</span>
+</a>
+<a class="bf26-cat" href="https://www.printloja.com.br/cartucho-de-tinta" title="Ver cartuchos de tinta">
+<span class="bf26-cat-img"><img src="https://images.tcdn.com.br/img/img_prod/1041864/cartucho_hp_670xl_cz117ab_deskjet_3525_5525_4615_4625_compativel_preto_22ml_356403_1_8f3babd60172b64949d17ea762d383b3.jpg" alt="Cartucho de tinta compatível com HP 670XL preto, 22 ml" width="643" height="642" loading="lazy"></span>
+<h3>Cartucho de tinta</h3>
+<p>Para impressoras jato de tinta, como os cartuchos da linha HP 670.</p>
+<span class="bf26-cat-cta">Ver cartuchos de tinta &rarr;</span>
+</a>
+<a class="bf26-cat" href="https://www.printloja.com.br/tinta" title="Ver tintas e refis para impressora">
+<span class="bf26-cat-img"><img src="https://images.tcdn.com.br/img/img_prod/1041864/tinta_compativel_premium_para_epson_100ml_preto_black_universal_refil_100ml_357153_1_f3733ca1ade5116299c041e50560cfe2.png" alt="Refil de tinta compatível para Epson, 100 ml, preto" width="1200" height="1200" loading="lazy"></span>
+<h3>Tinta</h3>
+<p>Refis para impressoras de tanque, como a tinta para Epson de 100&nbsp;ml.</p>
+<span class="bf26-cat-cta">Ver tintas &rarr;</span>
+</a>
+<a class="bf26-cat" href="https://www.printloja.com.br/papelaria/papel-fotografico" title="Ver papéis fotográficos">
+<span class="bf26-cat-img"><img src="https://images.tcdn.com.br/img/img_prod/1041864/papel_fotografico_180g_a4_50_folhas_brilhante_355975_1_d378c89602e4dfd3f794af9601a46d0c.jpg" alt="Papel fotográfico brilhante 180 g, A4, 50 folhas" width="800" height="800" loading="lazy"></span>
+<h3>Papel fotográfico</h3>
+<p>Para imprimir fotos, como o papel brilhante 180&nbsp;g A4.</p>
+<span class="bf26-cat-cta">Ver papéis fotográficos &rarr;</span>
+</a>
+</div>
+<p class="bf26-mais"><span class="bf26-mais-t">Mais categorias:</span>
+<a class="bf26-pill" href="https://www.printloja.com.br/po-de-toner" title="Ver pó de toner">Pó de toner</a>
+<a class="bf26-pill" href="https://www.printloja.com.br/para-recarga" title="Ver produtos para recarga">Para recarga</a>
+<a class="bf26-pill" href="https://www.printloja.com.br/cilindro-fotocondutor" title="Ver cilindros fotocondutores">Fotocondutor</a>
+<a class="bf26-pill" href="https://www.printloja.com.br/papelaria" title="Ver produtos de papelaria">Papelaria</a>
+</p>
+</div>
+</section>
+
+<section class="bf26-sec bf26-sec-claro">
+<div class="bf26-wrap">
+<p class="bf26-eb">Compatibilidade</p>
+<h2 class="bf26-h2">Como achar o cartucho ou toner certo</h2>
+<p class="bf26-intro">Antes de aproveitar a oferta, confira se o produto serve na sua impressora. Veja como:</p>
+<ol class="bf26-passos">
+<li><span class="bf26-num" aria-hidden="true">1</span><h3>Busque pelo modelo da impressora</h3><p>Digite o modelo na busca do topo do site, no campo &ldquo;Modelo da Impressora ou Cartucho&rdquo;. Exemplo:</p><span class="bf26-cod">HP M1132</span></li>
+<li><span class="bf26-num" aria-hidden="true">2</span><h3>Ou pelo código do cartucho ou toner</h3><p>O código costuma estar no próprio cartucho ou toner, ou no manual da impressora. Exemplos:</p><span class="bf26-cod">CE285A</span><span class="bf26-cod">TN1060</span></li>
+<li><span class="bf26-num" aria-hidden="true">3</span><h3>Na dúvida, chame no WhatsApp</h3><p>Mande o modelo da sua impressora para a equipe da Print Loja, de segunda a sexta, das 8h às 18h.</p><a class="bf26-lk" href="https://wa.me/554430464284?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Black%20Friday%20e%20quero%20ajuda%20para%20escolher%20o%20cartucho%20ou%20toner%20da%20minha%20impressora." target="_blank" rel="noopener" title="Enviar o modelo da impressora pelo WhatsApp (44) 3046-4284">Enviar o modelo pelo WhatsApp&nbsp;&rarr;</a></li>
+</ol>
+<div class="bf26-duo">
+<div class="bf26-check">
+<h3>Antes de escolher, confira</h3>
+<ul class="bf26-checks">
+<li>O código do cartucho ou toner, ou o modelo da sua impressora, aparece no anúncio.</li>
+<li>O tipo é o da sua impressora: toner, cartucho ou tinta.</li>
+<li>A cor é a que você precisa: preto ou colorido.</li>
+</ul>
+<a class="bf26-bt bf26-bt-vd" href="https://wa.me/554430464284?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Black%20Friday%20e%20quero%20ajuda%20para%20escolher%20o%20cartucho%20ou%20toner%20da%20minha%20impressora." target="_blank" rel="noopener" title="Pedir ajuda pelo WhatsApp (44) 3046-4284 para escolher o cartucho ou toner"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.2A9.7 9.7 0 0 0 3.6 16.8L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg>Pedir ajuda para escolher</a>
+</div>
+<div class="bf26-box">
+<span class="bf26-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 19.5 5.6v6c0 4.6-3.2 8.2-7.5 9.6-4.3-1.4-7.5-5-7.5-9.6v-6z"/><path d="m8.6 12 2.4 2.4 4.6-4.8"/></svg></span>
+<div>
+<h3>Compatível ou original?</h3>
+<p>A Print Loja vende os dois, e os compatíveis da Print Loja têm nota fiscal e garantia. As regras estão nas páginas de garantia e de trocas.</p>
+<div class="bf26-vant-l"><a class="bf26-lk" href="https://www.printloja.com.br/tempo-de-garantia" title="Tempo de garantia dos produtos Print Loja">Ver tempo de garantia&nbsp;&rarr;</a><a class="bf26-lk" href="https://www.printloja.com.br/trocas-e-devolucoes" title="Política de trocas e devoluções da Print Loja">Ver trocas e devoluções&nbsp;&rarr;</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bf26-sec">
+<div class="bf26-wrap">
+<p class="bf26-eb">Pagamento, frete e cashback</p>
+<h2 class="bf26-h2">Vantagens para comprar na Black Friday</h2>
+<p class="bf26-intro">Condições da Print Loja que também valem para as ofertas de Black Friday. As regras completas estão nas páginas indicadas em cada item.</p>
+<div class="bf26-vants">
+<div class="bf26-vant">
+<span class="bf26-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.8 21.2 12 12 21.2 2.8 12z"/><path d="M12 7.6 16.4 12 12 16.4 7.6 12z"/></svg></span>
+<h3>10% de desconto à vista</h3>
+<p>Pague no Pix, no boleto ou por transferência e ganhe 10% de desconto à vista.</p>
+<div class="bf26-vant-l"><a class="bf26-lk" href="https://www.printloja.com.br/pagamento" title="Formas de pagamento da Print Loja">Ver formas de pagamento&nbsp;&rarr;</a></div>
+</div>
+<div class="bf26-vant">
+<span class="bf26-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6.5 15h4"/></svg></span>
+<h3>Até 6x sem juros no cartão</h3>
+<p>Parcele em até 6 vezes sem juros no cartão de crédito, com parcela mínima de R$&nbsp;20,00.</p>
+<div class="bf26-vant-l"><a class="bf26-lk" href="https://www.printloja.com.br/pagamento" title="Condições de parcelamento no cartão">Ver condições de parcelamento&nbsp;&rarr;</a></div>
+</div>
+<div class="bf26-vant">
+<span class="bf26-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5h11v10h-11zM13.5 9.5h4l3 3.2v3.8h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span>
+<h3>Frete grátis acima de R$&nbsp;299 ou R$&nbsp;399</h3>
+<p>Para Sul, Sudeste, MT, MS e DF, em compras acima de R$&nbsp;299. Nas demais regiões, acima de R$&nbsp;399.</p>
+<div class="bf26-vant-l"><a class="bf26-lk" href="https://www.printloja.com.br/frete-gratis-cartucho-toner" title="Regras do frete grátis da Print Loja">Ver regras do frete grátis&nbsp;&rarr;</a></div>
+</div>
+<div class="bf26-vant">
+<span class="bf26-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12a8.5 8.5 0 1 1-2.5-6"/><path d="M20.5 3.5v4.2h-4.2"/><path d="M12 7.5v9M14.6 9.3h-3.4a1.6 1.6 0 0 0 0 3.2h1.6a1.6 1.6 0 0 1 0 3.2H9.4"/></svg></span>
+<h3>10% de volta em cashback</h3>
+<p>10% do valor volta como cashback para as próximas compras. Ele cobre até 30% do valor de um pedido e vale por 90 dias.</p>
+<div class="bf26-vant-l"><a class="bf26-lk" href="https://www.printloja.com.br/cashback" title="Regulamento do cashback da Print Loja">Ler o regulamento do cashback&nbsp;&rarr;</a></div>
+</div>
+<div class="bf26-vant">
+<span class="bf26-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></svg></span>
+<h3>Envio em até 2 dias úteis</h3>
+<p>O pedido sai em até 2 dias úteis após a identificação do pagamento. O prazo da transportadora aparece no carrinho, pelo CEP.</p>
+<div class="bf26-vant-l"><a class="bf26-lk" href="https://www.printloja.com.br/envio" title="Prazos e formas de envio da Print Loja">Ver como funciona o envio&nbsp;&rarr;</a><a class="bf26-lk" href="https://www.printloja.com.br/como-comprar" title="Passo a passo para comprar na Print Loja">Ver o passo a passo da compra&nbsp;&rarr;</a></div>
+</div>
+<div class="bf26-vant">
+<span class="bf26-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-6.2-7-11.7a7 7 0 0 1 14 0c0 5.5-7 11.7-7 11.7z"/><circle cx="12" cy="9.8" r="2.6"/></svg></span>
+<h3>Retirada grátis em Maringá (PR)</h3>
+<p>Em Maringá, você pode retirar o pedido na loja física da Print Loja, sem custo de frete.</p>
+<div class="bf26-vant-l"><a class="bf26-lk" href="https://www.printloja.com.br/nossas-lojas" title="Endereço da loja Print Loja em Maringá">Ver a loja de Maringá&nbsp;&rarr;</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bf26-sec bf26-sec-navy">
+<div class="bf26-wrap">
+<p class="bf26-eb">Compra segura</p>
+<h2 class="bf26-h2">A Print Loja avaliada por quem compra</h2>
+<p class="bf26-intro">Notas públicas de clientes em três plataformas, além do Prêmio Época Reclame Aqui.</p>
+<div class="bf26-notas">
+<div class="bf26-nota">
+<span class="bf26-nota-s">Reclame Aqui</span>
+<span class="bf26-nota-n">9,6<small>/10</small></span>
+<p>Reputação <strong>ÓTIMA</strong></p>
+</div>
+<div class="bf26-nota">
+<span class="bf26-nota-s">YourViews</span>
+<span class="bf26-nota-n">4,7<small>/5</small></span>
+<p><strong>10.119 avaliações</strong> de clientes</p>
+</div>
+<div class="bf26-nota">
+<span class="bf26-nota-s">Google</span>
+<span class="bf26-nota-n">4,9<small>/5</small></span>
+<p><strong>Mais de 280</strong> avaliações</p>
+</div>
+<div class="bf26-nota bf26-premio">
+<span class="bf26-trofeu" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.7V17c0 .6-.5 1-1 1.2C7.9 18.8 7 20.2 7 22M14 14.7V17c0 .6.5 1 1 1.2 1.1.6 2 2 2 3.8M18 2H6v7a6 6 0 0 0 12 0z"/></svg></span>
+<p><strong>Vencedora do Prêmio Época Reclame Aqui</strong> na categoria E&#8209;commerce &ndash; Materiais para escritório</p>
+</div>
+</div>
+<p class="bf26-fonte">Notas consultadas em outubro de 2026 no Reclame Aqui, no YourViews e no Google.</p>
+<div class="bf26-empresa">
+<p>A Print Loja está <strong>em operação desde 2010</strong> e tem <strong>loja física em Maringá (PR)</strong>. Os produtos têm nota fiscal e garantia.</p>
+<div class="bf26-pills2">
+<a class="bf26-pill2" href="https://www.printloja.com.br/quem-somos" title="Quem somos: a história da Print Loja">Quem somos</a>
+<a class="bf26-pill2" href="https://www.printloja.com.br/seguranca" title="Segurança na compra da Print Loja">Compra segura</a>
+<a class="bf26-pill2" href="https://www.printloja.com.br/tempo-de-garantia" title="Tempo de garantia dos produtos Print Loja">Tempo de garantia</a>
+<a class="bf26-pill2" href="https://www.printloja.com.br/trocas-e-devolucoes" title="Política de trocas e devoluções da Print Loja">Trocas e devoluções</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bf26-sec bf26-sec-claro">
+<div class="bf26-wrap">
+<p class="bf26-eb">Dúvidas</p>
+<h2 class="bf26-h2">Perguntas frequentes sobre a Black Friday 2026</h2>
+<p class="bf26-intro">Respostas rápidas sobre datas, preços, pagamento, frete e escolha do produto.</p>
+<div class="bf26-faq">
+<div class="bf26-q">
+<h3>Quando é a Black Friday 2026?</h3>
+<p>A Black Friday 2026 é na sexta-feira, 27 de novembro. Na Print Loja, as ofertas valem durante todo o mês de novembro, de 1&ordm; a 30/11/2026, enquanto durarem os estoques.</p>
+</div>
+<div class="bf26-q">
+<h3>Até quando valem as ofertas da Print Loja?</h3>
+<p>Até 30/11/2026, enquanto durarem os estoques. O contador desta página termina à meia-noite, na virada de 30/11 para 1&ordm;/12.</p>
+</div>
+<div class="bf26-q">
+<h3>Onde encontro todas as ofertas?</h3>
+<p>Na <a class="bf26-tl" href="https://www.printloja.com.br/black-friday" title="Categoria Black Friday da Print Loja">categoria Black Friday</a>, que fica no menu do site, em OUTROS DEPARTAMENTOS.</p>
+</div>
+<div class="bf26-q">
+<h3>Os preços desta página estão atualizados?</h3>
+<p>Sim. A vitrine desta página mostra o preço e o estoque de cada produto, atualizados automaticamente. Na categoria Black Friday, preço e estoque também estão sempre atualizados.</p>
+</div>
+<div class="bf26-q">
+<h3>Como sei qual cartucho ou toner serve na minha impressora?</h3>
+<p>Busque pelo modelo da impressora (ex.: HP M1132) ou pelo código do cartucho ou toner (ex.: CE285A, TN1060) na busca do topo do site. O código costuma estar no próprio produto ou no manual. Na dúvida, mande o modelo pelo <a class="bf26-tl" href="https://wa.me/554430464284?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Black%20Friday%20e%20quero%20ajuda%20para%20escolher%20o%20cartucho%20ou%20toner%20da%20minha%20impressora." target="_blank" rel="noopener" title="Enviar o modelo da impressora pelo WhatsApp">WhatsApp da Print Loja</a>.</p>
+</div>
+<div class="bf26-q">
+<h3>Tem desconto no Pix?</h3>
+<p>Sim. No Pix, no boleto ou na transferência, o desconto à vista é de 10%. No cartão de crédito, dá para parcelar em até 6x sem juros, com parcela mínima de R$&nbsp;20,00. Veja as <a class="bf26-tl" href="https://www.printloja.com.br/pagamento" title="Formas de pagamento da Print Loja">formas de pagamento</a>.</p>
+</div>
+<div class="bf26-q">
+<h3>O frete é grátis?</h3>
+<p>Sim, em compras acima de R$&nbsp;299 para Sul, Sudeste, MT, MS e DF, e acima de R$&nbsp;399 nas demais regiões. Em Maringá (PR), a retirada na loja é grátis. Veja as <a class="bf26-tl" href="https://www.printloja.com.br/frete-gratis-cartucho-toner" title="Regras do frete grátis da Print Loja">regras do frete grátis</a>.</p>
+</div>
+<div class="bf26-q">
+<h3>Como funciona o cashback?</h3>
+<p>10% do valor da compra volta como cashback para usar nas próximas compras. O cashback cobre até 30% do valor de um pedido e vale por 90 dias. Leia o <a class="bf26-tl" href="https://www.printloja.com.br/cashback" title="Regulamento do cashback da Print Loja">regulamento do cashback</a>.</p>
+</div>
+<div class="bf26-q">
+<h3>Qual é o prazo de envio?</h3>
+<p>O pedido é enviado em até 2 dias úteis após a identificação do pagamento. O prazo da transportadora aparece no carrinho, quando você informa o CEP. Veja como funciona o <a class="bf26-tl" href="https://www.printloja.com.br/envio" title="Prazos e formas de envio da Print Loja">envio dos pedidos</a> e o <a class="bf26-tl" href="https://www.printloja.com.br/como-comprar" title="Passo a passo para comprar na Print Loja">passo a passo da compra</a>.</p>
+</div>
+<div class="bf26-q">
+<h3>Os cartuchos e toners compatíveis têm garantia?</h3>
+<p>Sim. A Print Loja vende compatíveis e originais, e os compatíveis têm nota fiscal e garantia. As regras estão nas páginas de <a class="bf26-tl" href="https://www.printloja.com.br/tempo-de-garantia" title="Tempo de garantia dos produtos Print Loja">tempo de garantia</a> e de <a class="bf26-tl" href="https://www.printloja.com.br/trocas-e-devolucoes" title="Política de trocas e devoluções da Print Loja">trocas e devoluções</a>.</p>
+</div>
+<div class="bf26-q">
+<h3>A Print Loja é confiável?</h3>
+<p>A Print Loja está em operação desde 2010 e tem loja física em Maringá (PR). Em outubro de 2026, tinha reputação ÓTIMA (9,6/10) no Reclame Aqui, nota 4,7/5 no YourViews, com 10.119 avaliações, e 4,9 no Google, com mais de 280 avaliações. Também foi vencedora do Prêmio Época Reclame Aqui na categoria E&#8209;commerce &ndash; Materiais para escritório. Veja a página de <a class="bf26-tl" href="https://www.printloja.com.br/seguranca" title="Segurança na compra da Print Loja">compra segura</a>.</p>
+</div>
+<div class="bf26-q">
+<h3>Como falo com a Print Loja?</h3>
+<p>Pelo WhatsApp (44) 3046-4284, pelo SAC 0800 600 7852 ou pelo e-mail contato@printloja.com.br, de segunda a sexta, das 8h às 18h. Todos os canais estão na <a class="bf26-tl" href="https://www.printloja.com.br/atendimento" title="Central de atendimento da Print Loja">central de atendimento</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bf26-final">
+<div class="bf26-cmyk" aria-hidden="true"></div>
+<div class="bf26-wrap">
+<div class="bf26-final-in">
+<div>
+<p class="bf26-eb">Black Friday Print Loja</p>
+<h2 class="bf26-h2">Ofertas de Black Friday até 30 de novembro</h2>
+<p class="bf26-final-p">Preço e estoque sempre atualizados na categoria Black Friday. Ofertas válidas enquanto durarem os estoques.</p>
+</div>
+<div class="bf26-final-acoes">
+<a class="bf26-bt bf26-bt-am" href="https://www.printloja.com.br/black-friday" title="Ver todas as ofertas na categoria Black Friday da Print Loja">Ver todas as ofertas da Black Friday</a>
+<a class="bf26-bt bf26-bt-ct" href="https://wa.me/554430464284?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Black%20Friday%20e%20quero%20ajuda%20para%20escolher%20o%20cartucho%20ou%20toner%20da%20minha%20impressora." target="_blank" rel="noopener" title="Falar com a Print Loja pelo WhatsApp (44) 3046-4284"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.2A9.7 9.7 0 0 0 3.6 16.8L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg>Falar no WhatsApp</a>
+</div>
+<p class="bf26-contato"><span class="bf26-ci">WhatsApp <a href="https://wa.me/554430464284?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Black%20Friday%20e%20quero%20ajuda%20para%20escolher%20o%20cartucho%20ou%20toner%20da%20minha%20impressora." target="_blank" rel="noopener" title="Chamar a Print Loja no WhatsApp">(44) 3046-4284</a></span><span class="bf26-ci">SAC <a href="tel:08006007852" title="Ligar para o SAC da Print Loja">0800 600 7852</a></span><span class="bf26-ci">E-mail <a href="mailto:contato@printloja.com.br" title="Enviar e-mail para a Print Loja">contato@printloja.com.br</a></span><span class="bf26-ci">Segunda a sexta, das 8h às 18h</span><span class="bf26-ci"><a href="https://www.printloja.com.br/atendimento" title="Central de atendimento da Print Loja">Central de atendimento</a></span></p>
+</div>
+</div>
+</section>
+</div>
